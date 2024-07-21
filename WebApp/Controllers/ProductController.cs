@@ -19,7 +19,7 @@ namespace WebApp.Controllers
         }
         // GET: api/<ProductController>
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         public async Task<IEnumerable<Product>> Get()
         {
             return await repository.GetAllAsync();
