@@ -1,0 +1,16 @@
+<h2>Edit Product</h2>
+<div *ngIf="product">
+  <label>
+    Name:
+    <input [(ngModel)]="product.name" />
+  </label>
+  <label>
+    Price:
+    <input [(ngModel)]="product.price" />
+  </label>
+  <label>
+    Description:
+    <input [(ngModel)]="product.description" />
+  </label>
+  <button (click)="updateProduct()">Save</button>
+</div>
